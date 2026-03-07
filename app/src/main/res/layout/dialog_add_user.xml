@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Name"
+        android:background="@drawable/bg_input" />
+
+    <EditText
+        android:id="@+id/etUserPass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_input" />
+
+    <RadioGroup
+        android:id="@+id/rgRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rbStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher"
+            android:layout_marginStart="12dp" />
+
+        <RadioButton
+            android:id="@+id/rbParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent"
+            android:layout_marginStart="12dp" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spStudentClass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

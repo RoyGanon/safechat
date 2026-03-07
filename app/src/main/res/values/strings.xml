@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafeChat</string>
+
+    <!-- Login -->
+    <string name="login_title">SafeChat - Login</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="wrong_name_or_password">Wrong name or password</string>
+
+    <!-- Conversations -->
+    <string name="conversations_title">Conversations</string>
+    <string name="logout">Logout</string>
+    <string name="new_chat">New chat</string>
+
+    <!-- Chat -->
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="back">Back</string>
+    <string name="export">Export</string>
+    <string name="flagged">Flagged</string>
+
+    <!-- Admin -->
+    <string name="admin_panel">Admin Panel</string>
+    <string name="create_user">Create User</string>
+    <string name="create_class">Create Class</string>
+    <string name="assign_class">Assign Class</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+
+    <!-- Moderation -->
+    <string name="before_send">Before you send…</string>
+    <string name="harmful_warning">This message may be harmful (risk: %1$d/100). Send anyway?</string>
+    <string name="send_anyway">Send anyway</string>
+    <string name="cancel">Cancel</string>
+</resources>

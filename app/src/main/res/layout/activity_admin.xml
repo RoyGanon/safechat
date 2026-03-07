@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sc_bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="12dp"
+            android:orientation="horizontal"
+            android:background="@color/sc_card"
+            android:elevation="4dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Admin Panel"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/sc_text" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Logout"
+                android:background="@drawable/bg_btn_outline"
+                android:textColor="@color/sc_primary"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+        <!-- CONTENT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <!-- QUICK ACTIONS CARD -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="18dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:background="@color/sc_card">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quick Actions"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/sc_text"
+                        android:layout_marginBottom="10dp" />
+
+                    <!-- Row 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnAddUser"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Add User"
+                            android:background="@drawable/bg_primary_btn"
+                            android:textColor="@color/white"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="14dp" />
+
+                        <Button
+                            android:id="@+id/btnEditUser"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Edit User"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/bg_primary_btn"
+                            android:textColor="@color/white"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="14dp" />
+                    </LinearLayout>
+
+                    <!-- Row 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:id="@+id/btnDeleteUser"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Delete User"
+                            android:background="@drawable/bg_primary_btn"
+                            android:textColor="@color/white"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="14dp" />
+
+                        <Button
+                            android:id="@+id/btnCreateClass"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Add Class"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/bg_primary_btn"
+                            android:textColor="@color/white"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="14dp" />
+                    </LinearLayout>
+
+                    <!-- Row 3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:id="@+id/btnMoveStudent"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Move Student"
+                            android:background="@drawable/bg_primary_btn"
+                            android:textColor="@color/white"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="14dp" />
+
+                        <Button
+                            android:id="@+id/btnAssignTeacher"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Assign Teacher"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/bg_primary_btn"
+                            android:textColor="@color/white"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="14dp" />
+                    </LinearLayout>
+
+                    <!-- Row 4 -->
+                    <Button
+                        android:id="@+id/btnUpdateGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Update Class Group"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_primary_btn"
+                        android:textColor="@color/white"
+                        android:textAllCaps="true"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp" />
+
+                    <!-- Row 5 -->
+                    <Button
+                        android:id="@+id/btnAssignChildToParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Assign Child To Parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_primary_btn"
+                        android:textColor="@color/white"
+                        android:textAllCaps="true"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- STATUS -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardElevation="0dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:background="@color/sc_card">
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ready ✅"
+                        android:textColor="@color/sc_text_muted" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
